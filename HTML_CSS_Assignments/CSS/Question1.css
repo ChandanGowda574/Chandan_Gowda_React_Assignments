@@ -4,10 +4,15 @@ body{
 
 h1 {
     background-color: #1321e4;
-    width: 200px;
+    display: block;
+    padding-bottom: 30px;
   }
-  
+  p{
+    background-color: lightcyan;
+    padding-bottom:20px;
+  }
   div {
-    background-color: #9283b3;
-    width: 200px;;
+    background-color: lightsteelblue;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
   }

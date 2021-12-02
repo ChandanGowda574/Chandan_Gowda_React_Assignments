@@ -21,3 +21,6 @@ h2.d {
     border-width: 0px;
     background-color: aliceblue;
 }
+body{
+    border: ridge;
+}

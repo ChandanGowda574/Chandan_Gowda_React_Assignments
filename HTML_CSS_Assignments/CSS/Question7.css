@@ -4,3 +4,6 @@ p {
     outline-style: dotted;
     outline-color: #00ff00;
 }
+div{
+    border: 1px lightblue;
+}
