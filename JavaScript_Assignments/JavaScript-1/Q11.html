@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse of an array</title>
+    </head>
+    <body>
+        <script>
+             var arr = [];
+            while(arr.length < 8)
+            {
+                 var r = Math.floor(Math.random() * 100) + 1;
+                    if(arr.indexOf(r) === -1) arr.push(r);
+            }
+                document.write(arr);
+                document.write("<br>");
+                document.write(arr.reverse());
+        </script>
+    </body>
+</html>

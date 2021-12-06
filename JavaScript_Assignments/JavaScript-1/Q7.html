@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+	</head>
+<body>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">Javascript - Simple Currency Converter</h3>
+		<hr style="border-top:1px dotted rgb(206, 8, 8);">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h4>Converter</h4>
+			<hr style="border-top:1px groovy rgb(233, 7, 7);"/>
+			<div class="form-group">
+                <input type="number"name="Dollar" placehloder="Enter the value of Dollar" oninput="Calculate()" class="form-control" id="value1"/>
+				<select onchange="Currency(); Calculate()" class="form-control" id="converter" style="width:30%;">
+					<option value="Pound">Pound</option>
+					<option value="Euro">Euro</option>
+					<option value="Yen">Yen</option>
+					<option value="Indian">Indian</option>
+				</select>
+				<br />
+				
+			</div>
+			<br /><br />
+			<div class="form-group">
+				<label>Coverted value in other Currency:</label>
+				<input type="number" class="form-control" id="value2" disabled="disabled"/>
+			</div>
+		</div>
+	</div>
+    <script>
+        function Currency(){
+    y = document.getElementById("converter").value;
+    return y;
+}
+
+function Calculate(){
+y = Currency();
+
+x = document.getElementById("value1").value;
+
+if(x == ""){
+    document.getElementById("value2").value = "";
+}else{
+    switch(y){
+        
+        case "Pound":
+            document.getElementById("value2").value = x * 0.72;
+        break;
+
+        case "Euro":
+            document.getElementById("value2").value = x * 0.84;
+        break;
+
+        case "Yen":
+            document.getElementById("value2").value = x * 109.14;
+        break;
+
+        case "Indian":
+            document.getElementById("value2").value = x * 75.28;
+        break;
+    }
+}
+}
+    </script>
+</body>
+</html>
